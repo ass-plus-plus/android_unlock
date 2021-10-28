@@ -1,0 +1,12 @@
+1. rsa4096_vbmeta.pem 密匙文件请自行到对应软件中获取(附件为展讯默认)：vendor
+/vendor/sprd/proprietories-source/packimage_scripts/signimage/sprd/config/rsa4096_vbmeta.pem
+
+2.使用unbuntu系统解锁，解锁要到fastboot路径下，我们这边是将“fastboot/signidentifier_unlockbootloader.sh/rsa4096_vbmeta.pem”放在一个路径下，然后到该路径下按照文档说明解锁
+
+3.解锁前请先进入fastboot bootloader状态：指令如下
+adb devices 
+adb root
+adb remount
+adb reboot booloader
+
+然后按照《android_device_lock-unlock使用说明.pdf》文档解锁
